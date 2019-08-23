@@ -4,10 +4,10 @@ pipeline {
         stage ('Build Servlet Project') {
             steps {
                 /*For windows machine */
-              // bat  'mvn clean package'
+               bat  'mvn clean package'
  
                 /*For Mac & Linux machine */
-                sh  'mvn clean package'
+               // sh  'mvn clean package'
             }
  
             post{
@@ -22,7 +22,7 @@ pipeline {
         stage ('Deploy Build in Staging Area'){
             steps{
  
-                build job : 'Deploy-StagingArea-Piple'
+                build job : 'Deploy Staging-Area Pipeline'
  
             }
         }
