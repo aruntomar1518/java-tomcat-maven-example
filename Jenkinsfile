@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage ('Build Project') {
+        stage ('Build Servlet Project') {
             steps {
                 
                 sh 'mvn clean package'
