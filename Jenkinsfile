@@ -13,6 +13,10 @@ pipeline {
             steps {
             echo "Hello World"
             }
+        stage ('Build') {
+            steps {
+            echo "Hello World"
+            }
         }
     }
-}
+} 
