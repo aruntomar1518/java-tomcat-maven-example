@@ -3,16 +3,15 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh ***
-                echo "PATH = $(PATH)"
-                ecoo "M2_HOME = $(M2_HOME)"
-                ***
+                
+                echo "initializing"
+                
             }
         }
 
         stage ('Build') {
             steps {
-            echo 'Hello World'
+            echo "Hello World"
             }
         }
     }
